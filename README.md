@@ -1,4 +1,4 @@
-## phonebook
+## PHONEBOOK
 Easy to use phonebook app.
 
 - Built with vue.js (V2).
