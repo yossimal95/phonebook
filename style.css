@@ -1,0 +1,184 @@
+@font-face {
+    font-family: myFont;
+    src: url(./font/SecularOne-Regular.ttf);
+}
+
+:root {
+    --color-digital: #005AA5;
+    --background: #f0f7fd;
+    --font-color: #404040;
+}
+
+* {
+    font-family: myFont, Arial, Helvetica, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100%;
+    overflow: auto;
+}
+
+.main-app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.title {
+    color: white;
+    background-color: var(--color-digital);
+    padding: 20px;
+    font-size: 27px;
+    user-select: none;
+}
+
+.input-container {}
+
+.date {
+    display: block;
+    font-size: 10px;
+    text-align: right;
+    color: silver;
+}
+
+.input-search {
+    margin-top: 50px;
+    width: 200px;
+    font-size: 23px;
+    direction: rtl;
+    text-align: center;
+    border: 0px;
+    border-bottom: 1px solid var(--color-digital);
+    background-color: var(--background);
+    outline: none;
+    user-select: none;
+}
+
+.list-container {
+    flex: 1;
+    overflow: auto;
+    padding-bottom: 200px;
+}
+
+.list-item {
+    display: block;
+    max-width: 250px;
+    background-color: white;
+    margin: 5px auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+}
+
+.name {
+    display: block;
+    color: var(--font-color);
+    font-size: 21px;
+}
+
+.tel {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.item-window {
+    position: fixed;
+    background-color: #005ba570;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.board {
+    width: 90%;
+    background-color: white;
+    margin: 130px auto 10px;
+    border: 3px dashed var(--color-digital);
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 2px white;
+    padding-bottom: 30px;
+}
+
+.avatar {
+    margin: -55px auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/avatar.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.avatar-name {
+    font-size: 26px;
+    margin-top: 50px;
+    display: block;
+    color: var(--color-digital);
+    margin-bottom: 20px;
+}
+
+.link-itme {
+    display: block;
+    direction: rtl;
+}
+
+.link-itme>div>span {
+    color: var(--font-color);
+    font-size: 20px;
+    user-select: none;
+}
+
+.link-itme>div>a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0000c9;
+    user-select: none;
+}
+
+.copied {
+    direction: rtl;
+    display: inline-block;
+    padding: 20px;
+    background-color: var(--font-color);
+    color: white;
+    position: relative;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.close:after {
+    content: "\d7";
+    font-size: 25px;
+    color: white;
+    display: block;
+    margin: auto;
+}
+
+.whatsapp {
+    display: block;
+    background-image: url(./img/whatsapp.png);
+    height: 40px;
+    width: 40px;
+    background-size: 40px;
+    margin: 20px auto 0px;
+}
